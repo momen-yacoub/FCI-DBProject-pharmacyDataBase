@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{201FEF07-7196-4B48-B744-18B127859B82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pharmacy</RootNamespace>
+    <AssemblyName>pharmacy</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComplexSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComplexSelect.Designer.cs">
+      <DependentUpon>ComplexSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport%28Customers-Orders%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport%28Customers-Orders%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport%28Products--Supply%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport%28Products--Supply%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport%28Products-Supply%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport%28Products-Supply%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReport.Designer.cs">
+      <DependentUpon>CrystalReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReprot2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReprot2.Designer.cs">
+      <DependentUpon>CrystalReprot2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDelete.Designer.cs">
+      <DependentUpon>CustomerDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersInsert.Designer.cs">
+      <DependentUpon>CustomersInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersUpdate.Designer.cs">
+      <DependentUpon>CustomersUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.cs">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insert.Designer.cs">
+      <DependentUpon>Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderDelete.Designer.cs">
+      <DependentUpon>OrderDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderInsert.Designer.cs">
+      <DependentUpon>OrderInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderUpdate.Designer.cs">
+      <DependentUpon>OrderUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerDelete.Designer.cs">
+      <DependentUpon>OwnerDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerInsert.Designer.cs">
+      <DependentUpon>OwnerInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerUpdate.Designer.cs">
+      <DependentUpon>OwnerUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductDelete.Designer.cs">
+      <DependentUpon>ProductDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductID-and-SalesPersonSalary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductID-and-SalesPersonSalary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProductsInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsInsert.Designer.cs">
+      <DependentUpon>ProductsInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsUpdate.Designer.cs">
+      <DependentUpon>ProductsUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesPersonDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesPersonDelete.Designer.cs">
+      <DependentUpon>SalesPersonDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesPersonInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesPersonInsert.Designer.cs">
+      <DependentUpon>SalesPersonInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesPersonUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesPersonUpdate.Designer.cs">
+      <DependentUpon>SalesPersonUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select.Designer.cs">
+      <DependentUpon>Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppliersDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliersDelete.Designer.cs">
+      <DependentUpon>SuppliersDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppliersInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliersInsert.Designer.cs">
+      <DependentUpon>SuppliersInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppliersUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliersUpdate.Designer.cs">
+      <DependentUpon>SuppliersUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplyDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplyDelete.Designer.cs">
+      <DependentUpon>SupplyDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplyInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplyInsert.Designer.cs">
+      <DependentUpon>SupplyInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplyUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplyUpdate.Designer.cs">
+      <DependentUpon>SupplyUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ComplexSelect.resx">
+      <DependentUpon>ComplexSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport%28Customers-Orders%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport%28Customers-Orders%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport%28Products--Supply%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport%28Products--Supply%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport%28Products-Supply%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport%28Products-Supply%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport.resx">
+      <DependentUpon>CrystalReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReprot2.resx">
+      <DependentUpon>CrystalReprot2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDelete.resx">
+      <DependentUpon>CustomerDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersInsert.resx">
+      <DependentUpon>CustomersInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersUpdate.resx">
+      <DependentUpon>CustomersUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert.resx">
+      <DependentUpon>Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderDelete.resx">
+      <DependentUpon>OrderDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderInsert.resx">
+      <DependentUpon>OrderInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderUpdate.resx">
+      <DependentUpon>OrderUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerDelete.resx">
+      <DependentUpon>OwnerDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerInsert.resx">
+      <DependentUpon>OwnerInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerUpdate.resx">
+      <DependentUpon>OwnerUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductDelete.resx">
+      <DependentUpon>ProductDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductID-and-SalesPersonSalary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductID-and-SalesPersonSalary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsInsert.resx">
+      <DependentUpon>ProductsInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsUpdate.resx">
+      <DependentUpon>ProductsUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SalesPersonDelete.resx">
+      <DependentUpon>SalesPersonDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesPersonInsert.resx">
+      <DependentUpon>SalesPersonInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesPersonUpdate.resx">
+      <DependentUpon>SalesPersonUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select.resx">
+      <DependentUpon>Select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliersDelete.resx">
+      <DependentUpon>SuppliersDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliersInsert.resx">
+      <DependentUpon>SuppliersInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliersUpdate.resx">
+      <DependentUpon>SuppliersUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplyDelete.resx">
+      <DependentUpon>SupplyDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplyInsert.resx">
+      <DependentUpon>SupplyInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplyUpdate.resx">
+      <DependentUpon>SupplyUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
